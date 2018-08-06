@@ -3,26 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <title>Web開発の練習１</title>
-<link rel="stylesheet"href="myastyale.css"><!--この行を追加-->
+<link rel="stylesheet"href="mystyle.css"><!--この行を追加-->
 <!--<script src="myjs.js"></script>-->
 <script src="ex6-5.js"></script>
 </head>
 <body>
   zm17086 金森　暢一<br>
-<!--文字の大きさの練習-->
-<h1>Hhllo World</h1>
-<h2>Hhllo World</h2>  
-<h3>Hhllo World</h3>
-<ol>
-<li>ほげほげ</li>    
-<li>ほにゃらら</li>
-</ol>
+  
+<p>焼肉について紹介します。</p><br>
 <script src="myjs.js"></script>
-  <!--<h1>イベントハンドラの練習</h1>
-  <input type="button"value="ここをクリック"
-         ondblclick="alert('Hello,youichi!');">-->
-<input type="button"value="ここをクリック"onclick="syahello();syahello();">
-<input type="button"value="ここをクリック"onclick="saygoodbey();">
+<table>
+<caption>
+  <strong>焼肉をどこで食べるか？その長所と短所</strong>
+  <details>
+    <summary>このテーブルの説明</summary>
+  <p>以下のテーブルでは、２番目のカラムに焼肉店のタイプが入れられています。
+    その左側にそのようなタイプのお店で焼肉を食べる場合の長所が、右側には短所が入れられています。</p>
+  </details>
+  </caption>
+<thead>
+  <tr><th class="important">長所</th><th>どこで食べるか</th><th>短所</th></tr>
+</thead>
+<tbody>
+  <tr><td>種類も味も豊富</td><th>焼肉店</th><td>出かけた先でないと足を運べない</td></tr>
+<tr><td>値段が安く、いつでも自由に食べられる</td><th>自宅</th><td>種類や味が少ない</td></tr>
+</tbody>
+</table>
+<table>
+  <caption><strong>焼肉をどこで食べるか？その長所と短所</strong></caption>
+  <thead>
+  <tr><th >どこで食べるか</th><th class="important">長所</th><th>短所</th></tr>
+  </thead>
+<tbody>
+  <tr><th>焼肉店</th><td>種類も味も豊富</td><td>出かけた先でないと足を運べない</td></tr>
+<tr><th>自宅</th><td>値段が安く、いつでも自由に食べられる</td><td>種類や味が少ない</td></tr>
+</tbody>
+  </table>
+  
+ <p class="sample1">セキュリティー対策は今後ますます重要になるでしょう。</p>
+<p class="sample2">セキュリティー対策は今後ますます重要になるでしょう。</p>
+ <p class="sample3">セキュリティー対策は今後ますます重要になるでしょう。</p> 
+
+  <a href="https://matome.naver.jp/odai/2141741887350427701"><img src="./image/焼肉.jpg"></a>
+ 
+  <input type="button"value="ここをクリック"onclick="syahello();syahello();">
+
 <h1>変数の練習</h1>
 <input type="button"value="あいさつ"onclick="sayhello();">
 <input type="button"value="太郎"onclick="taro();">
